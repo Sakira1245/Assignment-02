@@ -565,6 +565,7 @@
   .tech-section {
     padding: 40px 20px;
     width: 100%;
+    height: 1450px;
   }
 
   .tech-container {
@@ -605,6 +606,11 @@
     padding-top: 0px;
     padding-bottom: 16px;
   }
+
+  .audio p,
+.resource p {
+  width: 100%;
+}
 
 
   .feature-cards {
