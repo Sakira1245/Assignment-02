@@ -481,9 +481,6 @@
 
 @media screen and (max-width:576px) {
 
-  .podcast-section {
-    visibility: hidden;
-  }
 
   .navbar {
     padding: 12px 25px;
@@ -511,8 +508,30 @@
     /* ensures no space */
     border-style: none;
     background-color: none;
+}
 
-  }
+.podcast-section, .podcast-container{
+width: 100%;
+}
+
+.podcast-content{
+  display: grid;
+   grid-template-columns: 1fr;
+   padding: 40px 20px;
+}
+
+.podcast-content p{
+  width: 400;
+  display: block;
+  text-align: center;
+}
+
+.podcast-card-section{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+  justify-content: center;
+}
 
   /* hero section */
   .hero-section {
