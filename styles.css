@@ -81,7 +81,7 @@
   gap: 16px;
   justify-content: space-around;
   align-items: center;
-  width:100%;
+  width: 100%;
 }
 
 .logo-color {
@@ -481,8 +481,7 @@
 
 @media screen and (max-width:576px) {
 
-  .podcast-section,
-  .feature-section {
+  .podcast-section {
     visibility: hidden;
   }
 
@@ -546,22 +545,6 @@
     right: 200;
   }
 
-  /* .tech-grid{
-    display: grid;
-    grid-template-areas: 
-    "Audio",
-    "Mobile",
-    "Global",
-    "Interview",
-    "Resource";
-    justify-content: center;
-  } */
-
-  /* 
-  .tech-section {
-    max-width: 100%;
-  } */
-
   .tech-section {
     padding: 40px 20px;
     width: 100%;
@@ -608,20 +591,34 @@
   }
 
   .audio p,
-.resource p {
-  width: 100%;
-}
+  .resource p,
+  .feature-container,
+  .feature-episodes {
+    width: 100%;
+  }
 
+  .feature-section {
+    padding: 40px 20px;
+    width: 100%;
+    height: 1936px;
+    display: grid;
+  }
 
   .feature-cards {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    gap: 1px;
+    gap: 16px;
+    width: 100%;
+    height: 395px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
-  .feature-episodes h1 {
+  .feature-episodes h1,
+  .host-description p {
     width: 100%;
+    /* text-wrap: nowrap; */
   }
 
   .time {
@@ -633,9 +630,68 @@
 
   .feature-card {
     width: 500px;
+    height: 369px;
   }
 
+  .feature-card h2,
+  p {
+    width: 100%;
+  }
+
+  .time-container {
+    margin: 1px 25px 16px 25px;
+  }
+
+  .host-content-section {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    height: 550px;
+    align-content: start;
+    justify-items: center;
+  }
+
+  .host-container {
+    margin-top: 800px;
+    height: 900px;
+    font-size: 2rem;
+  }
+
+  .host-container h3 {
+    width: 100%;
+    margin-top: 110px;
+  }
+
+  .host-description {
+    display: grid;
+    width: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .host-description p {
+    text-align: center;
+  }
+
+  .host-description h2 {
+    font-size: 1.5rem;
+  }
+
+  .social-media-icons {
+    justify-content: center;
+  }
+
+  /* 
+  .feature-card p {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    text-align: left;
+  } */
+
   .footer-section {
+    margin-top: 150px;
     padding: 40px 20px 40px 20px;
     height: 248px;
     background-size: cover;
